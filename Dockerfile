@@ -1,4 +1,5 @@
 FROM ubuntu
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
 RUN apt-get install git libxml2-dev libxslt-dev -y
 RUN git clone https://github.com/ustayready/fireprox /root/fireprox
