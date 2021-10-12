@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt-get update
-RUN apt-get install git libxml2-dev libxslt-dev build-base -y
+RUN apt-get install git libxml2-dev libxslt-dev -y
 RUN git clone https://github.com/ustayready/fireprox /root/fireprox
 RUN cd /root/fireprox && pip install -r requirements.txt
 WORKDIR /root/fireprox
