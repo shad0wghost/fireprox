@@ -1,2 +1,2 @@
 #!/bin/sh
-exec python fire.py "$@"
+exec python3 fire.py "$@"
