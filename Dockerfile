@@ -1,7 +1,7 @@
 FROM ubuntu
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
-RUN apt-get install git libxml2-dev libxslt-dev python python-setuptools -y
+RUN apt-get install git libxml2-dev libxslt-dev python python-setuptools curl -y
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 RUN python2 get-pip.py
 RUN git clone https://github.com/ustayready/fireprox /root/fireprox
